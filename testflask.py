@@ -1,9 +1,9 @@
-from flask import Flask
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route("/")
-def home():
+def helloworld():
     return "Hello world"
 
 @app.route("/name")
@@ -21,6 +21,13 @@ def request_detail():
     
     json_data = json.dumps({'y': 'received!' })  #เปลี่ยนข้อมูลที่เรามีเป็น json
     return json_data
+
+
+## web app
+@app.route("/home")
+def home():
+    return render_template("home.html")
+
     
 if __name__=="__main__":
     app.run()#(host='0.0.0.0')
