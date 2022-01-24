@@ -11,15 +11,12 @@ from . import resources
 
 class ImageNetIndex(Mapping):
     """Interface to retrieve ImageNet class indeces from class names.
-
     This class implements a dictionary like object, aiming to provide an
     easy-to-use look-up table for finding a target class index from an ImageNet
     class name.
-
     Reference:
         - ImageNet class index: https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json
         - Synsets: http://image-net.org/challenges/LSVRC/2015/browse-synsets
-
     Note:
         Class names in `imagenet_class_index.json` has been slightly modified
         from the source due to duplicated class names (e.g. crane). This helps
