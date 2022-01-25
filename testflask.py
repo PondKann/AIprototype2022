@@ -11,7 +11,7 @@ def hellokanyarat():
     return "Hello, Kanyarat!"
 
 ##api
-@app.route('/request', method=['POST'])
+@app.route('/request', methods=['POST'])
 def request_detail():
     
     payload = request.data.decode("utf-8")
@@ -24,11 +24,26 @@ def request_detail():
 
 
 ## web app
-@app.route("/home")
+@app.route("/home", methods=['POST','GET'])
 def home():
-    return render_template("home.html")
+    
+    if request.method == "POST":
+        
+        first_name = request.form.get("fname")
+        last_name = request.form.get("lname")
+        
+        return render_template("home.html", name = f"{first_name} {last_name}" , show ="")    
+    return render_template("home.html", name = 'Pond', show ="")
 
+
+@app.route("/home2", methods=['POST'])
+def home2():
+    
+    major = request.form["name_program"]
+    print(major)   
+    
+    return render_template("home.html", name = 'Pond', show = major)
+        
     
 if __name__=="__main__":
     app.run()#(host='0.0.0.0')
-
