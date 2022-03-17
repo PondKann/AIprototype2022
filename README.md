@@ -7,6 +7,13 @@
    https://drive.google.com/file/d/1-7q2w4l69mz5Pcznf7i5fvcL7IT13VJc/view?usp=sharing
 
 ### 2) Cloud Virtual machine(VM) 
+   วิธีใช้งาน VM บน Azure 
+        
+      1) Creat Resource groups
+      2) Creat Virtual machines โดยเลือก Resource groups ที่ Creat ไว้ในข้อ 1 
+      3) ดาวน์โหลดและติดตั้ง Anaconda หรือ minicanda แล้วเปิด Anaconda powershell prompt
+      4) 
+
    คำสั่งต่าง ๆ
    
       ls      ดูว่าในที่ที่เราอยู่มีไฟล์อะไรอยู่บ้าง
