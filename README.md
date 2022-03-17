@@ -6,9 +6,9 @@
    วิธีสมัครใช้งาน Azure ฟรีแบบนักศึกษา --> 
    https://drive.google.com/file/d/1-7q2w4l69mz5Pcznf7i5fvcL7IT13VJc/view?usp=sharing
    
-      1) ดาวน์โหลด ubuntu และเปิด ubuntu 
-      2) เปิด ubuntu จะขึ้นลิ้งวิธีการติดตั้งให้เราอ่าน
-      3) copy code "wsl --install" ไว้ ไปวางใน administrator Windows PowerShell 
+   1) ดาวน์โหลด ubuntu และเปิด ubuntu 
+   2) เปิด ubuntu จะขึ้นลิ้งวิธีการติดตั้งให้เราอ่าน
+   3) copy code "wsl --install" ไว้ ไปวางใน administrator Windows PowerShell 
    
 
 ### 2) Cloud Virtual machine(VM) 
@@ -83,16 +83,16 @@
 
    รัน Jupyter Notebook บน VM
        
-       1) ติดตั้ง Jupyter Notebook ใน command line 
-       2) kanny/code/AIprototype:$ Jupyter Notebook จะเด้งขึ้นเป็นหน้า Jupyter Notebook ที่สามารถพิมพ์โค้ดและรัน ด้วยทรัพยากรณ์ของ VM
-       3) ถ้าไม่ได้เชื่อม VM ก็จะรันด้วยทรัพยากรณ์ของเครื่องเรา
+   1) ติดตั้ง Jupyter Notebook ใน command line 
+   2) kanny/code/AIprototype:$ Jupyter Notebook จะเด้งขึ้นเป็นหน้า Jupyter Notebook ที่สามารถพิมพ์โค้ดและรัน ด้วยทรัพยากรณ์ของ VM
+   3) ถ้าไม่ได้เชื่อม VM ก็จะรันด้วยทรัพยากรณ์ของเครื่องเรา
 
 
 ### 4) Python บน command line (subprocess, python.py)
    subprocess คือ ฟังก์ชันที่ใช้ควบคุมคำสั่งบน command line 
    
-        1) คำสั่ง kanny/code/AIprototype:$ ls จะแสดงไฟล์ทั้งหมดที่อยู่ใน AIprototype 
-        2) ถ้าใช้ฟังก์ชัน subprocess จะเป็น subprocess.run('ls') บันทึกในไฟล์ testsubprocess.py 
-           เมื่อรันจะได้ output เป็นไฟล์ทั้งหมดที่อยู่ใน AIprototype เหมือนข้อ 1 
+   1) คำสั่ง kanny/code/AIprototype:$ ls จะแสดงไฟล์ทั้งหมดที่อยู่ใน AIprototype 
+   2) ถ้าใช้ฟังก์ชัน subprocess จะเป็น subprocess.run('ls') บันทึกในไฟล์ testsubprocess.py 
+      เมื่อรันจะได้ output เป็นไฟล์ทั้งหมดที่อยู่ใน AIprototype เหมือนข้อ 1 
 
 
