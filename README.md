@@ -2,7 +2,7 @@
 ## นางสาวกัณญารัตน์  พรมสุข  
 ## นักศึกษาชั้นปีที่ 4 สาขาสารสนเทศสถิติ มหาวิทยาลัยขอนแก่น
 
-### 1) การใช้ Lenux บน cloud (Microsoft Azure) : 
+### 1) การใช้ Linux บน cloud (Microsoft Azure) : 
    วิธีสมัครใช้งาน Azure ฟรีแบบนักศึกษา --> 
    https://drive.google.com/file/d/1-7q2w4l69mz5Pcznf7i5fvcL7IT13VJc/view?usp=sharing
    
