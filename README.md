@@ -88,7 +88,7 @@
    3) ถ้าไม่ได้เชื่อม VM ก็จะรันด้วยทรัพยากรณ์ของเครื่องเรา
 
 
-### 4) Python บน command line (subprocess, python.py)
+### 4) Python บน command line (subprocess, python.py)   [code](https://github.com/PondKann/AIprototype2022/blob/main/testsubprocess.py)
    subprocess คือ ฟังก์ชันที่ใช้ควบคุมคำสั่งบน command line 
    
    1) คำสั่ง kanny/code/AIprototype:$ ls จะแสดงไฟล์ทั้งหมดที่อยู่ใน AIprototype 
