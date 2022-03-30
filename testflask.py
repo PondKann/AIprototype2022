@@ -1,6 +1,11 @@
-from flask import Flask, request, render_template
+from codecs import ignore_errors
+from fileinput import filename
+from flask import Flask, request, render_template, make_response
+import json
+import pandas as pd
 
 app = Flask(__name__)
+
 
 @app.route("/")
 def helloworld():
@@ -21,18 +26,34 @@ def request_detail():
     
     json_data = json.dumps({'y': 'received!' })  #เปลี่ยนข้อมูลที่เรามีเป็น json
     return json_data
+#get ส่งแบบเปิดทุกคนสามารถเห็นได้
 
 
 ## web app
-@app.route("/home", methods=['POST','GET'])
+@app.route("/home", methods=['POST','GET'])   
+
 def home():
-    
+   
     if request.method == "POST":
-        
+        dbpd = pd.read_csv('db.csv')    #โหลดตารางที่สร้างไว้
         first_name = request.form.get("fname")
         last_name = request.form.get("lname")
         
-        return render_template("home.html", name = f"{first_name} {last_name}" , show ="")    
+        dbpd = dbpd.append({'name': first_name,'lastname': last_name}, ignore_index = True)     
+        dbpd.to_csv('db.csv', index=False)     #ignore_index คือ ตัวเลขข้างหน้า
+        
+        resp = make_response(render_template("home.html", name = f"{first_name} {last_name}", show =""))
+        resp.set_cookie('firstname', first_name)
+        
+        return resp
+        
+        # return render_template("home.html", name = f"{first_name} {last_name}" , show ="")  
+      
+    if request.method == "GET":
+        getval = request.args
+        print(getval)   
+        print(getval.get('name'))
+    
     return render_template("home.html", name = 'Pond', show ="")
 
 
