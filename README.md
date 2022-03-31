@@ -94,5 +94,20 @@
    1) คำสั่ง kanny/code/AIprototype:$ ls จะแสดงไฟล์ทั้งหมดที่อยู่ใน AIprototype 
    2) ถ้าใช้ฟังก์ชัน subprocess จะเป็น subprocess.run('ls') บันทึกในไฟล์ testsubprocess.py 
       เมื่อรันจะได้ output เป็นไฟล์ทั้งหมดที่อยู่ใน AIprototype เหมือนข้อ 1 
+      
+      
+### 5) Cloud DB & Cloud AI ทำนายอายุคนจากรูปภาพ [code](https://github.com/PondKann/AIprototype2022/blob/main/Could_DB_and_AI.ipynb)
+
+### 6) Flask: Web App + Web Service 
+   * Test flask เขียนคำสั่งเพื่อเชื่อมต่อกับเว็บแอป (@app.route / Cookie / Pandas as Database) [code](https://github.com/PondKann/AIprototype2022/blob/main/testflask.py)
+   
+   * Home .html คำสั่งที่เขียนเพื่อให้แสดงบนเว็บแอป [code](https://github.com/PondKann/AIprototype2022/blob/main/templates/home.html)
+   
+   * Database.scv ไฟล์ csv ที่เก็บข้อมูลจากหน้าเว็บแอป [code](https://github.com/PondKann/AIprototype2022/blob/main/db.csv)
+
+### 6) Tensorflow (Network) สร้างโมเดล (Sequential, Functional) [code](https://github.com/PondKann/AIprototype2022/blob/main/Tensorflow_(Network).ipynb)
+
+   
+   
 
 
