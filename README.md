@@ -105,7 +105,7 @@
    * Database.scv ไฟล์ csv ที่เก็บข้อมูลจากหน้าเว็บแอป [code](https://github.com/PondKann/AIprototype2022/blob/main/db.csv)
 
 ### 6) สร้าง Neural Network ด้วย Tensorflow (Sequential, Functional) / Data Pipeline (flow from directory) [code](https://github.com/PondKann/AIprototype2022/blob/main/Tensorflow_(Network).ipynb)
-
+ 
    
    
 
