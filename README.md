@@ -3,8 +3,7 @@
 ## นักศึกษาชั้นปีที่ 4 สาขาสารสนเทศสถิติ มหาวิทยาลัยขอนแก่น
 
 ### 1) การใช้ Linux บน cloud : 
-   วิธีสมัครใช้งาน Azure ฟรีแบบนักศึกษา --> 
-   https://drive.google.com/file/d/1-7q2w4l69mz5Pcznf7i5fvcL7IT13VJc/view?usp=sharing
+   วิธีสมัครใช้งาน Azure ฟรีแบบนักศึกษา [link](https://drive.google.com/file/d/1-7q2w4l69mz5Pcznf7i5fvcL7IT13VJc/view?usp=sharing)
    
    1) ดาวน์โหลด ubuntu และเปิด ubuntu 
    2) เปิด ubuntu จะขึ้นลิ้งวิธีการติดตั้งให้เราอ่าน
